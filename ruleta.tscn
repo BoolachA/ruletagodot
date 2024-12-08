@@ -1,0 +1,173 @@
+[gd_scene load_steps=19 format=3 uid="uid://cxjdcswlw1bih"]
+
+[ext_resource type="Texture2D" uid="uid://cfjsuckkbj735" path="res://WhatsApp Image 2024-12-06 at 18.12.53.png" id="1_it4qu"]
+[ext_resource type="Script" path="res://ruleta.gd" id="1_oq1h3"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vuonw"]
+a = Vector2(-81.2238, 61.8848)
+b = Vector2(139.241, 15.4712)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_w0wgk"]
+a = Vector2(-1.93384, -1.9339)
+b = Vector2(181.787, 34.8102)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_8n5j4"]
+a = Vector2(-1.93384, -1.93393)
+b = Vector2(158.58, 102.497)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_47bj6"]
+b = Vector2(106.365, 150.844)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gwwca"]
+b = Vector2(42.5458, 175.985)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_j6c4x"]
+b = Vector2(-25.1406, 185.654)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_wj5a2"]
+a = Vector2(5.80164, -1.9339)
+b = Vector2(-88.9595, 158.58)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ttlhc"]
+b = Vector2(-143.109, 116.034)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_g5uky"]
+b = Vector2(-216.597, 54.1492)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ocwdb"]
+b = Vector2(-185.654, -30.9425)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_4k8f6"]
+b = Vector2(-160.514, -102.497)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_4k7eb"]
+b = Vector2(-114.1, -156.646)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vkmdk"]
+b = Vector2(-42.5458, -185.654)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_umtp5"]
+b = Vector2(32.8763, -189.522)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_6otva"]
+b = Vector2(98.6288, -158.58)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_klwyw"]
+b = Vector2(154.712, -112.166)
+
+[node name="ruleta" type="Node2D"]
+script = ExtResource("1_oq1h3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.51709, 0.51709)
+texture = ExtResource("1_it4qu")
+
+[node name="1" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/1"]
+position = Vector2(-133.439, -526.021)
+shape = SubResource("SegmentShape2D_vuonw")
+
+[node name="2" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/2"]
+position = Vector2(13.5373, -508.616)
+shape = SubResource("SegmentShape2D_w0wgk")
+
+[node name="3" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/3"]
+position = Vector2(199.192, -469.938)
+shape = SubResource("SegmentShape2D_8n5j4")
+
+[node name="4" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/4"]
+position = Vector2(359.705, -361.639)
+shape = SubResource("SegmentShape2D_47bj6")
+
+[node name="5" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/5"]
+position = Vector2(468.004, -201.126)
+shape = SubResource("SegmentShape2D_gwwca")
+
+[node name="6" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/6"]
+position = Vector2(508.616, -17.4051)
+shape = SubResource("SegmentShape2D_j6c4x")
+
+[node name="7" type="Area2D" parent="Sprite2D"]
+position = Vector2(475.739, 175.985)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/7"]
+shape = SubResource("SegmentShape2D_wj5a2")
+
+[node name="8" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/8"]
+position = Vector2(379.044, 340.366)
+shape = SubResource("SegmentShape2D_ttlhc")
+
+[node name="9" type="Area2D" parent="Sprite2D"]
+position = Vector2(228.2, 458.334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/9"]
+shape = SubResource("SegmentShape2D_g5uky")
+
+[node name="10" type="Area2D" parent="Sprite2D"]
+position = Vector2(1.9339, 510.55)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/10"]
+shape = SubResource("SegmentShape2D_ocwdb")
+
+[node name="11" type="Area2D" parent="Sprite2D"]
+position = Vector2(0, 1.9339)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/11"]
+position = Vector2(-189.522, 473.805)
+shape = SubResource("SegmentShape2D_4k8f6")
+
+[node name="12" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/12"]
+position = Vector2(-351.97, 367.441)
+shape = SubResource("SegmentShape2D_4k7eb")
+
+[node name="13" type="Area2D" parent="Sprite2D"]
+position = Vector2(-469.938, 204.993)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/13"]
+shape = SubResource("SegmentShape2D_vkmdk")
+
+[node name="14" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/14"]
+position = Vector2(-510.55, 11.6034)
+shape = SubResource("SegmentShape2D_umtp5")
+
+[node name="15" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/15"]
+position = Vector2(-477.673, -185.654)
+shape = SubResource("SegmentShape2D_6otva")
+
+[node name="16" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/16"]
+position = Vector2(-373.243, -350.036)
+shape = SubResource("SegmentShape2D_klwyw")
+
+[connection signal="area_entered" from="Sprite2D/1" to="." method="_on__area_enteredA"]
+[connection signal="area_entered" from="Sprite2D/2" to="." method="_on__area_enteredB"]
+[connection signal="area_entered" from="Sprite2D/3" to="." method="_on__area_enteredC"]
+[connection signal="area_entered" from="Sprite2D/4" to="." method="_on__area_enteredD"]
+[connection signal="area_entered" from="Sprite2D/7" to="." method="_on__area_enteredC"]
+[connection signal="area_entered" from="Sprite2D/8" to="." method="_on__area_enteredB"]
+[connection signal="area_entered" from="Sprite2D/9" to="." method="_on__area_enteredA"]
+[connection signal="area_entered" from="Sprite2D/10" to="." method="_on__area_enteredB"]
+[connection signal="area_entered" from="Sprite2D/11" to="." method="_on__area_enteredC"]
+[connection signal="area_entered" from="Sprite2D/12" to="." method="_on__area_enteredD"]
+[connection signal="area_entered" from="Sprite2D/15" to="." method="_on__area_enteredC"]
+[connection signal="area_entered" from="Sprite2D/16" to="." method="_on__area_enteredB"]
